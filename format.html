@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application Form</title>
+</head>
+<body bgcolor="#045F5F" text="white">
+
+<h2 align="center">Application Form</h2>
+
+<center>
+<table bgcolor="#0A9396"  border="0">
+<form>
+
+    <tr>
+        <td>First Name:</td>
+        <td><input type="text" name="firstname"></td>
+        <td>Last Name:</td>
+        <td><input type="text" name="lastname"></td>
+    </tr>
+
+    <tr>
+        <td>Date of Birth:</td>
+        <td><input type="date" name="dob"></td>
+        <td>Age:</td>
+        <td><input type="number" name="age"></td>
+    </tr>
+
+    <tr>
+        <td>Gender:</td>
+        <td colspan="3">
+            <select name="gender">
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Email Address:</td>
+        <td colspan="3"><input type="email" name="email" size="40"></td>
+    </tr>
+
+    <tr>
+        <td>Positions:</td>
+        <td colspan="3">
+            <input type="radio" name="position" value="junior"> Junior Developer
+            <input type="radio" name="position" value="mid"> Mid-level Developer
+            <input type="radio" name="position" value="senior"> Senior Developer
+        </td>
+    </tr>
+
+    <tr>
+        <td>Programming Languages:</td>
+        <td colspan="3">
+            <input type="checkbox" name="language" value="java"> Java
+            <input type="checkbox" name="language" value="js"> JavaScript
+            <input type="checkbox" name="language" value="python"> Python
+        </td>
+    </tr>
+
+    <tr>
+        <td>Password:</td>
+        <td><input type="password" name="password"></td>
+        <td>Confirm Password:</td>
+        <td><input type="password" name="confirm_password"></td>
+    </tr>
+
+    <tr>
+        <td colspan="4" align="center">
+            <input type="submit" value="Submit" style="background-color: orange; color: white;">
+<input type="reset" value="Reset" style="background-color: orange; color: white;">
+
+        </td>
+    </tr>
+
+</form>
+</table>
+</center>
+
+</body>
+</html>
