@@ -1,0 +1,193 @@
+  <!----in html dont use post in method.It is used for backend purpose only
+  type=text,input,action
+  label=for
+  input=type,*name,id-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <center><img src="C:\WebTechonolgy\ASSERTS\buspass.png" alt="" height="100"></center>
+    <form action="" method="get">
+      <fieldset>
+      
+        <legend style="color:blue;"><strong>Application Details</strong></legend>
+       <table>
+        <tr>
+     <td> <label for="name">Name <strong><span style="color: red;">*</span></strong></label></td>
+        <td><input type="text" required placeholder="Enter your name"><br></td>
+      </tr>
+<tr>
+      <td><label for="dateofbirth">Date of Birth <strong><span style="color: red;">*</span></strong></label></td>
+      <td><input type="date"><br></td>
+      </tr>
+
+      
+      <tr>
+  <td><label for="">PhoneNumber <b><sup style="color: red;">*</sup></b></label></td>
+  <td><input type="tel" pattern="[0-9]{10}" placeholder="Enter your mobileNumber" required></td>
+      </tr>
+
+
+<tr>
+  <td><label for="">Photo <b><sup style="color: red;">*</sup></label></td>
+  <td><input type="file" name="" id=""></td>
+</tr>
+
+
+<tr>
+  <td><label for="">Father/Guardian Name <b><sup style="color: red;">*</sup></label></td>
+    <td><input type="text"  required placeholder="Enter father/Guardian name" style="color:green;"></td>
+</tr>
+
+<tr>
+  <td><label for="">Gender</label></td>
+  <td><input type="radio" name="gen">Male
+  <input type="radio" name="gen" id="">Female</td>
+</tr>
+
+
+<tr>
+  <td><label for="">Aadhar No <b><sup style="color: red;">*</sup></label></td>
+    <td><input type="text" required placeholder="Enter your aadhar number"></td>
+</tr>
+
+<tr>
+  <td><label for="E-Mail">E-Mail Id <b><sup style="color: red;">*</sup></label></td>
+   <td><input type="text" required placeholder="Enter E-Mail"></td> 
+</tr>
+ </table>
+        </fieldset>
+<!-- Residential Details -->
+  <fieldset>
+      <legend style="color:blue;"><strong>Residential Details</strong></legend>
+     <table>
+      <tr>
+        <td><label for="">Application Details <b><sup style="color: red;">*</sup></label></td>
+        <td><textarea></textarea></td>
+      </tr>
+
+      <tr>
+  <td><label for="mandal">Mandal <span style="color: red;">*</span></label></td>
+  <td>
+    <select required>
+      <option value="">Select Mandal</option>
+      <option value="Nampalley">Nampalley</option>
+      <option value="Ameerpet">Ameerpet</option>
+      <option value="khairatabad">Khairatabad</option>
+    </select>
+  </td>
+</tr>
+<tr>
+        <td><label for="">Pincode <b><sup style="color: red;">*</sup></label></td>
+        <td><input type="text" placeholder="Enter pincode" required></td>
+            </tr>
+            <tr>
+        <td><label for="">District <b><sup style="color: red;">*</sup></label></td>
+          <td>
+    <select required>
+      <option value="">Select District </option>
+      <option value="Medchal">Medchal</option>
+      <option value="Rangareddy">Rangareddy</option>
+      <option value="Medak">Medak</option>
+    </select>
+  </td>
+         </tr>
+         <tr>
+        <td><label for="">Village <b><sup style="color: red;">*</sup></label></td>
+          <td>
+    <select required>
+      <option value="">Select village </option>
+      <option value="Mallepalli">Mallepalli</option>
+      <option value="Lingampalli">Lingampalli</option>
+      <option value="Totaguda">Totaguda</option>
+    </select>
+  </td>
+         </tr>
+ </table>
+    </fieldset>
+<!-- 
+Pass Type Details -->
+  <fieldset>
+    <legend style="color: blue;"><strong>Pass Type Details</strong></legend>
+    <table>
+      <tr>
+        <td><label for="city">City <b><sup style="color: red;">*</sup></b></label></td>
+        <td>
+          <select required>
+            <option value="">Select City</option>
+            <option value="Ameerpet">Ameerpet</option>
+            <option value="Begumpet">Begumpet</option>
+            <option value="Malakpet">Malakpet</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="passtype">Pass Type <span style="color:red;">*</span></label></td>
+        <td>
+          <select required>
+            <option value="">-- Select Pass Type --</option>
+            <option value="monthly">Monthly</option>
+            <option value="quarterly">Quarterly</option>
+            <option value="halfyearly">Half-Yearly</option>
+            <option value="yearly">Yearly</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+  </fieldset>
+
+<fieldset>
+  <legend style="color: blue;"><strong>Mode of Payments & Pass Collection</strong></legend>
+  <table>
+    <tr>
+      <td><label for="">Payment Mode <span style="color:red;">*</span></label></td>
+      <td>
+        <select required>
+          <option value="">Mode of Payment</option>
+          <option value="cards">Cards</option>
+          <option value="digital">Digital Payment</option>
+          <option value="banktransfer">Bank Transfer</option>
+          <option value="cash">Cash</option>
+        </select>
+      </td>
+    </tr>
+ <tr>
+      <td><label for="deliveryMode">Select Delivery Mode <span style="color:red;">*</span></label></td>
+      <td>
+        <select required>
+          <option value="">Select Delivery Mode</option>
+          <option value="home">Home Delivery</option>
+          <option value="counter">Collect at Counter</option>
+          <option value="digital">Digital Pass (Email/SMS)</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="">Center at which you want to collect pass <span style="color:red;">*</span></label>
+      </td>
+      <td>
+        <select required>
+          <option value="">Select City</option>
+          <option value="Ameerpet">Ameerpet</option>
+          <option value="Begumpet">Begumpet</option>
+          <option value="Malakpet">Malakpet</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+</fieldset>
+<br>
+<center>
+  <img src="C:\WebTechonolgy\ASSERTS\pactcha.png" alt="" height="80px" ><br>
+<input type="text" name="" id=""><br><br>
+<input type="submit">
+</center>
+ </form>
+</body>
+</html>
